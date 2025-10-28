@@ -18,22 +18,33 @@
 
 // 3. Տրված են 2 փոփոխականներ՝ n և m (n < m): Գրել ֆունկցիա, որը կտպի տրված թվերի միջակայքում գտնվող 2-ի աստիճան թվերը՝
 
-function foo(n, m){
-    for(let i = 2; i <= m; i *= 2 ){
-        i >= n ? console.log(i): null;
-    }
-}
+// function foo(n, m){
+//     for(let i = 2; i <= m; i *= 2 ){
+//         i >= n ? console.log(i): null;
+//     }
+// }
 
-foo(100, 1000)
+// foo(100, 1000)
 
 // 4. Ստեղծել ֆունկցիա, որը ստանալով 1 կոտորակային թիվ տպում է առաջին թիվը 100-ական Ճշտությամբ: Օրինակ foo(3.2324) => 3.23
+// 
 
-function cloracum(num){
-    
-}
+// function cloracum(num){
+//     if(num % 1 !== 0 && num * 100 % 1 !== 0){
+//         num *= 100;
+//         num = num - (num % 1);
+//         num /= 100;
+//         return num
+//     }
+//     return num
+// }
+
+// console.log(cloracum(155.5845665765245658256));
+
 
 // 5. Կոնսոլում աստղանիշների միջոցով տպել բուրգ, օգտագործելով ցիկլ
 // օրինակ 
+
 
 // *
 // **
@@ -41,15 +52,46 @@ function cloracum(num){
 // ****
 // *****
 
+// function burg(num){
+//     let x = ''
+//     for(let i = num; i >= 0; i--){
+//         for(let j = 0; j < i; j++){
+//             x += '*'
+//         }
+//         console.log(x);
+//         x = '';
+//     }
+// }
+
+// burg(5)
+
 //     *
 //    **
 //   ***
 //  ****
 // *****
 
+// function rdBurg(num){
+//     for(let i = 0; i <= num; i++){
+//         let x = '';
+
+//         for(let j = num; j > i; j-- ){
+//             x += ' '
+//         }
+
+//         for(let k = 0; k <= i * 2; k++){
+//             x += '*'
+//         }
+
+//         console.log(x);   
+//     }
+// }
+
+// rdBurg(5)
 
 //     *
 //    ***
 //   *****
 //  *******
 // *********
+
